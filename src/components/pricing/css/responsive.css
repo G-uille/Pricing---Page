@@ -1,0 +1,48 @@
+@media(max-width: 1325px) {
+
+
+    /*----Texto de la caracteristica-----*/
+    .pricing__feactures-text {
+        width: 130px;
+        height: 30px;
+        font-size: 0.75rem;
+    }
+
+    /*-----Contenedor de cada uno de los precios-----*/
+    .container-single__price {
+        width: 250px;
+    }
+}
+
+@media(max-width: 910px) {
+
+    /*----Tabla con las caracteristicas-----*/
+    .table-pricing__feactures {
+        display: none;
+    }
+
+    /*------Texto con la caracteristica-----*/
+    .single-price__feacture {
+        display: none;
+    }
+
+    /*-----Tabla con los precios-----*/
+    .table-pricing {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /*-----Contenedor de cada uno de los precios-----*/
+    .container-single__price {
+        width: 70%;
+    }
+
+    .container-single__price {
+        background-color: #141414;
+        border: solid 1px #313131;
+        margin-bottom: 25px;
+    }
+}
