@@ -4,6 +4,10 @@
     border-radius: 20px;
     color: #ffffff;
     width: 350px;
+    cursor: pointer;
+}
+.container-single__price:hover {
+    background: #111411;
 }
 
 .container-single__price.selected {

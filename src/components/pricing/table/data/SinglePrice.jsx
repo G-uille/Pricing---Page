@@ -17,15 +17,17 @@ const RowData = ({ price }) => {
 };
 
 //Componenete que renderiza el contenido de la tabla de precio.
-const SinglePrice = ({ price, type, title }) => {
+const SinglePrice = ({ price, type, title, handleChangeSelected, id }) => {
     return (
-        <div className={`container-single__price ${type === "selected" ? "selected" : ""}`}>
+        <div 
+        onClick={() => handleChangeSelected(id)}
+        className={`container-single__price ${type === "selected" ? "selected" : ""}`}>
             <div className="single__price--header">
                 <div className="single__price--title">
                     <h3 className="single__price--text">{title}</h3>
-                    {type === "selected" &&
-                        <span className="single__price--mosth-popular">Más popular</span>
-                    }
+                    {/* {type === "selected" &&
+                        <span className="single__price--mosth-popular">Nuevo</span>
+                    } */}
                 </div>
 
                 <div className="container-price-with-mounth">
